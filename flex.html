@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author"  content="Aniakor Onyekachukwu">
+  <meta name=" description"    content=" this author talks about heading here">
+  <title> Flex Box Pricing table</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: black;
+      }
+
+      @media (max-width: 1250px) {
+        .pricing-container{
+          flex-direction: column;
+          height: 100vh;
+        }
+      }
+      .pricing-container{
+        display: flex;
+        gap: 2rem;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .pricing-plan{
+        background-color: whitesmoke;
+        text-align: center;
+        flex: 1;
+        max-width: 300px;
+
+
+      }
+      .plan-features{
+        list-style-type: none;
+        font-size: 16px;
+      }
+      .plan-title{
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .plan-price{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .plan-button{
+        position: relative;
+        left: 3px;
+        background-color: seagreen;
+        border-radius: 10%;
+        margin-bottom: 1rem;
+      }
+    
+      
+  
+
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container ">
+      <div class="pricing-plan ">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button ">Sign Up</button>
+      </div>
+      <div class="pricing-plan ">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan ">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
